@@ -36,3 +36,7 @@ form.addEventListener("submit", (e) => {
   Storage.clear();
   form.reset();
 });
+
+function showStorage() {
+  alert(localStorage.getItem("onboardingForm"));
+}
