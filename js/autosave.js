@@ -8,11 +8,14 @@ const AutoSave = (() => {
     return data;
   };
 
-  const saveDraft = () => {
-    const data = collectFormData();
-    Storage.save(data);
-    console.log("Draft auto-saved");
-  };
+const saveDraft = () => {
+  const data = collectFormData();
+  Storage.save(data);
+
+  document.getElementById("autosaveStatus").textContent =
+    "Last auto-saved at " + new Date().toLocaleTimeString();
+};
+
 
   const restoreDraft = () => {
     const data = Storage.load();
