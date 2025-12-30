@@ -46,3 +46,10 @@ button {
 button:hover {
   background: #003d99;
 }
+
+.dev-panel {
+  margin-top: 30px;
+  background: #eef3ff;
+  padding: 15px;
+  border-left: 4px solid #0052cc;
+}
